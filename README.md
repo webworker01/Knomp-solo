@@ -1,3 +1,19 @@
+## Solomining stratum for Komodo and Komodo assetchains.
+## (READY FOR TESTING)
+
+Requirements
+------------
+* node v8+
+* libsodium
+
+Differences between this and Z-NOMP
+------------
+* This is meant for solo mining
+* There is no share system; Every "share" is the block solution
+* No payments sent out
+
+Install
+-------------
 Some initial setup
 ```shell
 # The following packages are needed to build both Komodo and this stratum:
@@ -17,7 +33,6 @@ strip src/komodo-cli
 ```shell
 cd ~/komodo/src
 ./komodod -ac_name=MGNX -ac_supply=12000000 -ac_staked=90 -ac_reward=2000000000 -ac_halving=525960 -ac_cc=2 -ac_end=2629800 -addnode=45.32.236.224 -gen -genproclimit=1 &
-./komodo-cli -ac_name=MGNX getwalletinfo
 ```
 To check on our Assetchain status, we use something like:
 ```shell
@@ -41,3 +56,10 @@ nvm use 8
 npm install
 npm start
 ```
+
+License
+-------
+Released under the GNU General Public License v2
+http://www.gnu.org/licenses/gpl-2.0.html
+
+_Forked from [aayanl/equihash-solomining](https://github.com/aayanl/equihash-solomining) which is licensed under GNU GPL v2_
