@@ -1,0 +1,7 @@
+{
+    "name": "MagnaX",
+    "symbol": "MGNX",
+    "algorithm": "equihash",
+    "peerMagic": "f8e7a946",
+    "txfee": 0.0001
+}

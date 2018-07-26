@@ -1,0 +1,7 @@
+{
+    "name": "Dex",
+    "symbol": "DEX",
+    "algorithm": "equihash",
+    "peerMagic": "e051ce0a",
+    "txfee": 0.0001
+}

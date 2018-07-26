@@ -1,0 +1,48 @@
+{
+  "name": "Komodo-solomining",
+  "version": "0.0.1",
+  "description": "High performance Stratum poolserver in Node.js",
+  "keywords": [
+    "stratum",
+    "mining",
+    "pool",
+    "poolserver",
+    "komodo"
+  ],
+  "homepage": "https://github.com/TheComputerGenie/Knomp-solo",
+  "bugs": {
+    "url": "https://github.com/TheComputerGenie/Knomp-solo/issues"
+  },
+  "license": "GPL-2.0",
+  "author": "ComputerGenie",
+  "contributors": [
+    "aayanl"
+  ],
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheComputerGenie/Knomp-solo.git"
+  },
+  "dependencies": {
+    "async": "^2.6.1",
+    "base58-native": "^0.1.4",
+    "bignum": "^0.12.5",
+    "bitcoinjs-lib-zcash": "https://github.com/karel-3d/bitcoinjs-lib.git#e30d9d4af20afc492634a64194b566b4f0fb0d7e",
+    "body-parser": "^1.18.3",
+    "color": "^1.0.3",
+    "colors": "^1.3.0",
+    "dot": "^1.1.2",
+    "equihashverify": "https://github.com/zencashofficial/equihashverify.git#7a7403b229477d7cef5735a54e223c72cee5bcdf",
+    "express": "^4.16.3",
+    "express-dot-engine": "^1.0.7",
+    "merkle-bitcoin": "https://github.com/joshuayabut/merkle-bitcoin.git#3606036e3a44aa46e5a16cc6d7beea8e49dec8ef",
+    "promise": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/node_modules/stratum-pool/node_modules/equihashverify/build/Release/:$PWD/node_modules/equihashverify/build/Release/ node init.js"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "RFox",
+    "symbol": "ROX",
+    "algorithm": "equihash",
+    "peerMagic": "4cad0644",
+    "txfee": 0.0001
+}
