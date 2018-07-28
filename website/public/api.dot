@@ -9,6 +9,11 @@
     <script src="main.js"></script>
     <meta charset="utf-8">
     <style>
+        body {
+            background-color:#000;
+            color:#F9F9F9;
+        }
+
         .legend {
             font-size: 12px;
         }
