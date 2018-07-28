@@ -57,6 +57,11 @@ npm install
 npm start
 ```
 
+## Magic Converter
+https://cryptii.com/integer-encoder
+
+Text -> Decode Integer -> 32-bit signed integer -> Little-Endian -> Bytes -> Hexadecimal
+
 License
 -------
 Released under the GNU General Public License v2
