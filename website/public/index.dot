@@ -37,6 +37,10 @@
         .table-striped > tbody > tr:nth-of-type(2n+1) {
             background-color:#333;
         }
+
+        .table-hover > tbody > tr:hover {
+            background-color:#666;
+        }
     </style>
 </head>
 
