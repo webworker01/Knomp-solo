@@ -147,7 +147,8 @@ function blocks(cback) {
                 .attr('y', legendRectSize - legendSpacing)
                 .text(function(d, i) {
                     return array[i].label;
-                });
+                })
+                .style("fill", "white");
 
             cback(null, "createBlocksChart(" + data + ")")
         }
